@@ -93,7 +93,8 @@ static ssize_t usnet_chr_write_iter(struct kiocb *iocb, struct iov_iter *from)
 		 * tx_iov_frames_to_rb, sbd_iov_tx_func
 		 * after sbd_iov_pio_tx
 		 */
-		p_iov = kmalloc(sizeof(struct mif_iov), GFP_KERNEL);
+		p_iov = kmalloc(sizeof(struct mif_iov), GFP_KERNEL
+);
 
 		if (!p_iov) {
 			/* USNET_TODO: in case of allocation failure,
