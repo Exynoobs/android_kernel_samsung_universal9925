@@ -595,10 +595,13 @@ endif
 
 PLATFORM_VERSION = 12
 ANDROID_MAJOR_VERSION=s
+TARGET_SOC=s5e9925
 @echo "PLATFORM_VERSION: $(PLATFORM_VERSION)"
 @echo "ANDROID_MAJOR_VERSION: $(ANDROID_MAJOR_VERSION)"
+@echo "TARGET_SOC: $(TARGET_SOC)"
 export PLATFORM_VERSION
 export ANDROID_MAJOR_VERSION
+export TARGET_SOC
 
 # The expansion should be delayed until arch/$(SRCARCH)/Makefile is included.
 # Some architectures define CROSS_COMPILE in arch/$(SRCARCH)/Makefile.
